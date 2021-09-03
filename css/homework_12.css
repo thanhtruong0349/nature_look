@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: 'Roboto';
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(fonts/Roboto-Regular.ttf);
 }
 /*clearfix*/
 .header__top::after,
@@ -396,7 +396,7 @@ ol {
 }
 /*block-4*/
 .block-4{
-	background-image: url('../image/bl4-02.png');
+	background-image: url('image/bl4-02.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -472,40 +472,40 @@ ol {
 }
 /*block-5*/
 .block-5 .cms-freeship {
-    background: url(../image/cms-icon.png) no-repeat scroll 35px 38px;
+    background: url(image/cms-icon.png) no-repeat scroll 35px 38px;
     padding: 35px 0px 30px 110px;
     border: 10px solid #ECECEC;
     transition: all ease 0.3s;
 }
 
 .block-5 .cms-freeship:hover {
-    background: url(../image/cms-icon.png) no-repeat scroll 35px -33px;
+    background: url(image/cms-icon.png) no-repeat scroll 35px -33px;
     padding: 35px 0px 30px 110px;
     border: 10px solid #D39D5D;
 }
 
 .block-5 .cms-support {
-    background: url(../image/cms-icon.png) no-repeat scroll 35px -110px;
+    background: url(image/cms-icon.png) no-repeat scroll 35px -110px;
     padding: 35px 0px 30px 110px;
     border: 10px solid #ECECEC;
     transition: all ease 0.3s;
 }
 
 .block-5 .cms-support:hover {
-    background: url(../image/cms-icon.png) no-repeat scroll 35px -185px;
+    background: url(image/cms-icon.png) no-repeat scroll 35px -185px;
     padding: 35px 0px 30px 110px;
     border: 10px solid #D39D5D;
 }
 
 .block-5 .cms-money-back{
-    background: url(../image/cms-icon.png) no-repeat scroll 35px -260px;
+    background: url(image/cms-icon.png) no-repeat scroll 35px -260px;
     padding: 35px 0px 30px 110px;
     border: 10px solid #ECECEC;
     transition: all ease 0.3s;
 }
 
 .block-5 .cms-money-back:hover {
-    background: url(../image/cms-icon.png) no-repeat scroll 35px -340px;
+    background: url(image/cms-icon.png) no-repeat scroll 35px -340px;
     padding: 35px 0px 30px 110px;
     border: 10px solid #D39D5D;
 }
@@ -586,7 +586,7 @@ ol {
 
 /*block-9*/
 .block-9{
-	background: url('../image/bk9-01.jpg') no-repeat;
+	background: url('image/bk9-01.jpg') no-repeat;
 	background-position: center;
 	background-size: cover;
 	height: 60vh;
@@ -706,7 +706,7 @@ ul.menu.payment li {
 	bottom: 20px;
 	right: 3%;
 	position: fixed;
-	background: url('../image/go-top.png') no-repeat;
+	background: url('image/go-top.png') no-repeat;
 	background-size: cover;
 	z-index: 999;
 }
