@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nested Tables</title>
+</head>
+<body>
+	<header>
+		<h2>Nested Tables</h2>
+	</header>
+<main><!--Main Table -->
+	<table border="1" width="100%">
+		<thead>
+			<tr>
+				<th width="30%">Header column 1</th>
+			    <th width="20%">Header column 2</th>
+			    <th width="30%">Header column 3</th>
+			    <th width="auto%">Header column 4</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Dòng 2 -->
+			<tr>
+				<td rowspan="2">Row 2- Item 1</td>
+				<td rowspan="2">Row 2- Item 2</td>
+				<th rowspan="7">Row 2- Nested Table 3
+                     <table border="1" width="95%" align="center" >
+                     	<tr>
+                     		<th width="20%" rowspan="1">Row 1 header</th>
+                     		<td width="10%" rowspan="1">Item</td>
+                     	</tr>
+                     	<tr>
+                     		<th>Row 2 header</th>
+                     		<td>Item</td>
+                     	</tr>
+                     	<tr>
+                     		<th>Row 2 header</th>
+                     		<td>Item</td>
+                     	</tr>
+
+                     </table>
+
+				</th>
+				<td rowspan="2">Row 2- Item 4
+					<p>A second line</p>
+				</td>
+			</tr>
+                
+		</tbody>
+		<!-- Dòng 3 -->
+		<tbody>
+			 <tr>
+           	  <th rowspan="4">Row 3: Nested Table 2
+           	  	 <table border="1" width="95%" align="center">
+                     	<tr>
+                     		<th width="20%">Row 1 header</th>
+                     		<td width="10%">Item</td>
+                     	</tr>
+                     	<tr>
+                     		<th>Row 2 header</th>
+                     		<td>Item</td>
+                     	</tr>
+                 </table>
+           	  </th>
+              <td rowspan="4">Row 3 - Item 2</td>
+              <td rowspan="5">Row 3- Item 3</td>
+           </tr>
+
+		</tbody>
+          
+
+
+
+
+	</table>
+</main>
+</body>
+</html>

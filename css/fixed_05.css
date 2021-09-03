@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+   
+}
+.container{
+	width: 1100px;
+	margin: 0 auto; /*căn giữa*/
+
+}
+.feature-posts{
+	overflow: auto;
+
+}
+.feature-posts .col{
+	float: left;
+	padding: 0px 10px;
+}
+.feature-posts .col-one{
+    width: 25%;
+ }
+ .feature-posts .col-three{
+	width: 25%;
+}
+.feature-posts .col-two{
+	width: 40%;
+}
+.feature-posts .list-post .post-item{
+	overflow: hidden;
+	margin-left: -5px;
+	margin-right: -5px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.feature-posts .list-post .post-item .thumbnail{
+	width: 30%;
+	float: left;
+}
+.feature-posts .list-post .post-item .thumbnail img{
+   max-width: 100%;
+   height: auto;
+}
+.feature-posts .list-post .post-item .post-detail{
+	width: 60%;
+}
+.feature-posts .list-post .post-item .col{
+    padding: 0px 5px;
+}
+.feature-posts .list-post .post-item .post-detail h2 a{
+    color:#000;
+    text-decoration: none;
+}
+/*Style col-two*/
+.feature-posts .post-large img{
+	max-width: 100%;
+	height: auto;
+}
+.feature-posts .post-large h1{
+	font-size: 30px;
+}
+.feature-posts .post-large a{
+	color: #333;
+	text-decoration: none;
+}
+.feature-posts .post-large .post-desc{
+	padding: 10px 0px;
+
+}
+..feature-posts .post-large .post-other{
+	margin-left: 15px;
+}
+.feature-posts .post-large .post-other a{
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*Style col-three*/
+.feature-posts .post-one-col .post-item img{
+    max-width: 100%;
+    height: auto;
+
+}
+.feature-posts .post-one-col .post-item h2{
+	font-size: 15px;
+}
+.feature-posts .post-one-col .post-item a{
+ 	text-decoration: none;
+ 	color: #333;
+}

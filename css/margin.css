@@ -1,0 +1,39 @@
+.block-1{
+	border: 1px solid red;
+	width: 500px;
+	margin: auto ; /* auto là căn giữa */
+}
+.wrapper {
+	border: 1 px solid red;
+	width: 500px;
+	min-height: 500px;
+}
+.wrapper .block-2{
+	background: green;
+	color: #fff;
+	height: 500px;  /*Vì đã set height cố định trc*/
+	margin: 20px; /* Giá trị âm di chuyển ngược lại */
+}
+.banner{
+	background: green;
+	color: #fff;
+	height: 500px;
+	padding-top: 200px;
+	box-sizing: border-box;
+}
+.banner h2{
+	text-align: center;
+}
+.col-1{
+	width: 30%;
+	height: 100px;
+	background: green;
+}
+.col-2{
+	width: 30%;
+	height: 200px;
+	background: blue;
+
+	margin-left: 30%;
+	margin-top: -100px;
+}

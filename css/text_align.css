@@ -1,0 +1,20 @@
+.text{
+	text-align: justify;
+}
+.link-wrapper {
+	text-align: center;
+}
+.block-1 {
+	width: 300px;
+	height: 200px;
+	border: 1px solid red;
+	overflow-y: auto;
+	overflow-x: hidden; /*vô hiệu quả của x giảm lag*/
+}
+.block-1 .content{
+	width: 600px;
+
+}
+.block-2{
+	opacity: 0.5;
+}

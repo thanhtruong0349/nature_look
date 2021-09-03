@@ -1,0 +1,87 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+body{
+	font-size: 15px;
+}
+a{
+	text-decoration: none;
+}
+.menu-primary{
+	background: green;
+	margin-top: 200px;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.menu-primary ul{
+	list-style: none;
+
+}
+.menu-primary ul.menu>li{ /*hiện cùng cấp cấp 1*/
+	display: inline-block;
+	margin-right: -4px;/* sát giữa các menu vào nhau */
+	position: relative;
+}
+.menu-primary ul li a{
+	color: #fff;
+	display: block;
+}
+.menu-primary ul.menu ul{ /*Ẩn ul con*/
+	position: absolute;
+	background: tomato;
+	min-width: 200px; /*k set max-width*/
+	top: 100%;
+	left: -20%;
+	z-index: 100;
+	display: none; /*ẩn menu con*/
+}
+ /* tác động cấp 3*/
+/*.menu-primary ul.menu>li: hover>ul{
+	display: block;
+}
+.menu-primary ul.menu>li: hover>ul li: hover ul{;
+	display: block;
+	left: 100%;
+	top: -35px;
+}*/
+
+.menu-primary ul.menu ul li a{
+	display: block;
+	border-bottom: 1px solid #efefef;
+	padding: 5px 10px;
+}
+.menu-primary ul.menu ul li a:hover{
+	background-color: green;
+}
+/*xli khi hover vào menu cấp 1 sẽ xổ menu cấp 2 tương ứng*/
+.menu-primary ul.menu>li:hover ul{
+	display: block;
+}
+
+.menu-primary ul.menu>li>a{ /*tác động thẻ a của cấp đầu tiên cấp 1*/
+	display: block;
+	padding: 7px 15px;
+	text-transform: uppercase;
+	
+}
+.menu-primary ul.menu>li+li>a{ /*+: bỏ qua li đầu tiên td vào li thứ 2*/
+	border-left: 1px solid #fff;
+}
+/*xử lí khi hover vào thẻ a của menu cấp 1*/
+.menu-primary ul.menu>li>a:hover,
+.menu-primary ul.menu>li:hover a{
+	background: tomato;
+	color: yellow;
+}
+.menu img{
+	max-height: 50px;
+	position: relative;
+	top: 3px;
+}
+
+

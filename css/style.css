@@ -1,0 +1,137 @@
+/*Đây là comment*/
+p{
+	color: blue;
+}
+.first-line{
+	background: red;
+	font-size: 20px;
+}
+#second-line{
+	background: green;
+}
+.container .item{   /*Cha- cách- con*/
+	color:  red;
+}
+.main .item{
+	color: blue;
+}
+
+.item.feature{
+	background: red;
+}
+.item.box{
+	background: green;
+}
+
+p.item{
+	color: : red;
+}
+span.item{
+	color: blue;
+}
+
+/*Seclect 1 cấp*/
+.menu>li>a{
+	color: red;
+}
+/*Selecter theo thuộc tính*/
+a[target="blank"]{
+	color: red;
+}
+/*Color picker - lấy màu  Color Zilla*/
+/*What's Fonts-  Lấy tên font của web*/
+/* Page Ruler Redux- thước đo */ 
+input[type="submit"]{
+	background: green;
+	color: #fff;  /*màu trắng */
+	font-weight: bold;
+	border: none;
+	cursor: pointer;  /* thay đổi trỏ chuột */
+}
+input[type="email"],input[type="password"],
+input[type="text"]{
+	background: yellow;
+	border-color: red;
+}
+/*Thường dùng after && before*/
+/*.test::before{
+	content:'-';
+	color: red;
+    background:green;
+    margin-right:10px ;/*cách bên phải 1 khoảng*/
+}*/
+.test::after{
+	content:'|';
+	color: blue;
+	margin-left: 10px;
+	background: red;
+}
+/*Kí tự đầu tiên*/
+.test::first-letter{
+	font-weight: bold;
+	font-size:25px ;
+	color: red;
+}
+.test::first-line{
+	font-weight: bold;
+}
+/* Bôi đen khi quét chuột */
+.test::selection{
+     background: green;
+     color: yellow;
+}
+/*Lớp giả*/
+.text a{
+color: green;
+text-decoration: none;
+font-weight: bold;
+font-size: 30px;
+}
+.text a: hover{    /*Điều chỉnh chữ*/
+color: red;
+background: yellow;
+font-style: italic;
+}
+
+.nav li:not(.highlight) a{
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

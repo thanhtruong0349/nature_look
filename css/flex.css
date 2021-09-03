@@ -1,0 +1,21 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.item{
+	border: 1px solid red;
+	background: blue;
+	color: #fff;
+	font-size: 20px;
+}
+.row{
+	border: 1px solid green;
+	display: flex;
+	flex-direction: row;
+}

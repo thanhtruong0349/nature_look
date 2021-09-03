@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Các thuộc tính của Text</title>
+	<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/text.css">
+</head>
+<!-- 
+   1. font-family: thay đổi font chữ văn bản
+      - cú pháp: font-family: tên_font
+      -Note: có thể set nhiều form cho 1 văn bản ( cách nhau dấu phẩy )
+             chỉ set những font nào trong bộ Unicode(cài sẵn trên máy tính)
+             nếu phong chữ k nằm trong bộ Unicode: cần thực hiện nhúng font vào trang web thông qua selector: @font-face
+             Nếu font chữ có tên từ 2 chữ trở kên (có dấu cách): Cần đặt trong nháy đơn or kép : 
+                font-family:"Times New Roman"
+             Thứ tự gọi font: đọc từng font từ trái qua phải
+               => Nếu k đọc được chuyển thành font tiếp theo 
+               "fonts.google.com"
+
+   2. font-style: Thay đổi kiểu dáng của chữ
+      - Cú pháp: font-style: value
+      -value: 
+         +normal
+         +inherit
+   3. font-weight: Dày or mỏng( in đậm or not) 
+      - Cú pháp: font-weight: value 
+           normal, bold , bolder(do font chữ quyết định), giá trị độ dày( từ 100-900) chia hết cho 100 ( vd : not 150): 100-500: bình thường >< 600-900:
+      -Note: 1 số font chữ sẽ k thấy độ đậm nhạt nếu điền giá trị độ dày 
+
+    4. letter-spacing: Khoảng cách giữa các thứ tự
+       -Cú pháp: letter-spacing: value+unit
+       -value: nhận giá trị nguyên, thực
+       - unit: đơn vị pixel  :pt,px
+       (không thường dùng)
+
+    5.line-height: Dãn dòng văn bản
+        -Cú pháp: line-height: value
+        - Value: nhận các giá trị:
+          + SỐ nguyên : tương đối dựa vào thành phần cha( font-size x value)
+          + unit: (%, pt,px) 
+          +Lưu ý : dãn dòng tương đối k đơn vị ( % )
+
+    6.text-decoration: Thêm dấu gạch cho text( Trên , dưới, ngang)
+        -Cú pháp: text-decoration: value
+        -Value nhận :
+           +none: dùng ghi đè
+           +underline: gạch dưới
+           +line-throught: thẻ del
+           +overline: gạch trên
+		- Note: có thể dùng nhiều value cách nhau dấu cách
+
+    7.word-spacing: Thay đổi khoảng cách giữa các chữ
+       -Cú pháp: word-spacing: value+unit
+       -value: nhận giá trị nguyên, thực
+       - unit: đơn vị pixel  :pt,px
+
+    8. text-indent: Khoảng cách dòng đầu tiên so với lề trái ( chấp nhận giá trị âm) -ít dùng
+        -Cú pháp: text-indent: value
+        -Value: % : dựa vào màn hình
+               rem:
+           số nguyên, thực
+           unit: giống font-size
+
+    9. text-transform: Thay đổi kiểu hiển thị của chữ( chữ thường or hoa,...)
+         -Cú pháp: text-transform: value
+         -Value nhận:
+            +none: nguyên bản
+            +uppercase: viết Hoa
+            +lowercase: thường 
+            +capitalize: chữ cái đầu sau dấu cách
+ -->
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<p>
+		Văn bản tiếng Việt
+	</p>
+	<p class="transform"> học lập trình web</p>
+
+    <p class="text">
+    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</body>
+</html>

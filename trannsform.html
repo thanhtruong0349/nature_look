@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Transform</title>
+	<link rel="stylesheet" type="text/css" href="css/transform.css">
+</head>
+<!-- Thuộc tính
+	-rotate(angle): xoay theo góc
+		=> transform: rotate(60deg);
+	-rotateX(angle): xoay 3D theo trục ox (trục ngang)
+	-rotateY
+	-rotateZ
+	
+	-scale(1.1,1.5): phóng to theo trung tâm center
+	-scaleX(x): tăng ngang
+	-scaleY(y):tăng dọc
+
+	-skewX(angle):xoay nghiêng theo trục ox ( nếu âm <--)
+	-skewY(angle): nghiêng theo Y
+	-skew(angleX, angleY):
+
+	-translate(30px, 50px): di chuyển chạy chỗ tương ứng x ,y( có thể chạy ra khỏi container)
+==> Sự khác nhau margin & translate & position
+	+translate: k di chuyển thành phần xung quanh k ảnh hưởng container
+	+margin: kéo theo cả container
+==> Sự khác giữa translate và position:relatiive
+	-Translate:
+		+translate +transition: làm hiệu ứng
+		+Nếu sd % -> tính theo kt tp đang dủng transform
+	-Position:
+		+k + với transsition: bị giật
+		+Nếu sd % -> tính theo kích thước của width, height của cha
+
+
+	-transdorm-origin: x y => transform-origin: center top
+				+Kết hợp với transform: rotate
+	=>chọn lại trục transform
+
+	*****-scale(), skew(), rotate()
+ -->
+<body>
+	<div class="container">
+		<div class="block">Block</div>
+	</div>
+</body>
+</html>

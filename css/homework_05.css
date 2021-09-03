@@ -1,0 +1,129 @@
+.cover-all{
+	border: 1px solid none;
+	width: 100%;
+	margin: 0 auto;
+	overflow: auto;
+}
+.block-left{
+	border: 1px solid none;
+	width: 25%;
+	float: left;
+	font-family: "Arial";
+}
+/*CSs left */
+.block-left .left-1{
+	width: 100%;
+	border-bottom: 1px solid ;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 3px;
+}
+
+/*CSS block 1 left*/
+.block-left .left-1 img{
+	width: 50%;
+	float: left;
+}
+.block-left .left-1 p{
+	font-weight: bold;
+	font-size: 16px;
+}
+/*End of Block-1*/
+
+/*CSS block 2 Left*/
+.block-left .left-2{
+	width: 100%;
+	border-bottom: 1px solid ;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 3px;
+}
+.block-left .left-2 img{
+	width: 50%;
+	float: left;	
+}
+.block-left .left-2 p{
+	font-weight: bold;
+	font-size: 16px;
+}
+/*End of Block 2*/
+
+/*Begin of Block 3*/
+.block-left .left-3{
+	width: 100%;
+	border-bottom: 1px solid ;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 3px;
+}
+.block-left .left-3 img{
+	width: 50%;
+	float: left;	
+}
+.block-left .left-3 p{
+	font-weight: bold;
+	font-size: 16px;
+}
+/*End of Block 3*/
+
+/*Begin of Block 4*/
+.block-left .left-4{
+	width: 100%;
+	border-bottom: 1px solid ;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 3px;
+}
+.block-left .left-4 img{
+	width: 50%;
+	float: left;	
+}
+.block-left .left-4 p{
+	font-weight: bold;
+	font-size: 16px;
+}
+/*End of Block 4*/
+
+/*Begin of Block 5*/
+.block-left .left-5{
+	width: 100%;
+	border-bottom: 1px solid ;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 3px;
+}
+.block-left .left-5 img{
+	width: 50%;
+	float: left;	
+}
+.block-left .left-5 p{
+	font-weight: bold;
+	font-size: 16px;
+}
+/*End of Block 5*/
+/*End of Block Left*/
+
+/*Begin of Block center*/
+
+/*End Block center*/
+.block-center{
+	width: 45%;
+	border: 1px solid none;
+	 float: left;
+	margin-left: 25px;
+	font-family: "Arial";
+}
+.block-center .center-layout img{
+     width:100% ;
+}
+
+/*Begin Block Right*/
+.block-right{
+	width: 25%;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 40px;
+	font-family: "Arial";
+}
+
+/*End Block Right*/

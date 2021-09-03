@@ -1,0 +1,21 @@
+.block-1{
+	border: 1px solid red;
+	width:60% ;    Giới hạn chiều rộng khung  nên dùng % so vs màn hình
+	height: 100vh;
+
+}
+.block-2{
+	background: green;
+	width: 600px;
+	height: 500px;
+    max-width: 100%; /*Tự động thu nhỏ khi screen nhỏ theo kthuoc*/
+ }
+ .block-3{
+ 	background: blue;
+ 	width: 600px;
+ 	height: 300px;
+ 	max-height: 400px;
+ }
+ .block-4 img{
+ 	max-width: 60%;
+ }

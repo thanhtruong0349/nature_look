@@ -1,0 +1,46 @@
+// Khai báo biến
+$primaryColor:#ff0000;
+$fontFamily:"Roboto", sans-serif;
+$paddingColumn: 15px;
+$containerWidth :1000px +$paddingColumn;
+// Header -begin
+.header{
+    .header__logo{
+        padding: 30px 15px;
+        font-family: "Roboto" ,sans-serif;
+
+        img{
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+        }
+    }
+    .header__hotline{
+        border-radius: 20px;
+
+    }
+    .header__hotline--text{
+        border: 1px solid green;
+    }
+}
+// Header--Ends
+// Slide--Begin
+.slideshow{
+    position: relative;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .slideshow__controls{
+        position: absolute;
+        top: 40%;
+        height: auto;
+    }
+}
+body{
+   font-family: $fontFamily;
+   color: $primaryColor;
+}
+.container{
+    max-width: $containerWidth;
+}

@@ -1,0 +1,9 @@
+.block{
+	
+	/*border-left-color: red;
+	border-width: 3px;
+	border-left-style: double;*/
+	border:  3px double red;
+	border-bottom: none ;  /*k có khung dưới*/
+
+}

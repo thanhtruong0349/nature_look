@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<body>
+<!-- 1 trang web có rất nhiều form 
+đễ phân biệt cần nhóm các trường( field ) vào trong cặp thẻ <form>
+ 
+ -Thuộc tính: 
+     -method: gửi (post, get)s
+     -action : đường dẫn gửi tới xử lí
+Các field:
+   1: Ô nhập data text 1 dòng : <input /> (thẻ rỗng)
+       +kiểu text: <input type="text" />
+        value là giá trị mặc định
+       +kiểu submit: <input type="submit" name="">
+       +Kiểu button: <input type="button" name="">
+       +Kiểu reset: <input type="reset" name="">
+       +Kiểu email: 
+       +Kiểu number:
+       +Kiểu password:
+       +kiểu date:
+       +kiểu range: ranger slider
+       +kiểu color:
+       +Kiểu tel:
+   2. Label hiển thị <label></label>
+
+   3. Button: <button></button> (submit, reset, button)
+   
+2. nhập nhiều dòng: 
+-->
+ <form method="post" action="">
+ 	<p>
+ 		<label for="fullnameId">Họ và tên  </label><br />
+ 		<input type="text" name="fullname" id="fullnameId" class="" placeholder="Họ và tên ..." />
+    </p>
+    
+    <p>
+ 		<label for="emailId">Email  </label><br />
+ 		<input type="text" name="fullname" id="emailId" class="" placeholder="Email..." />
+    </p>
+    <p>
+ 		<label for="ageId">Age  </label><br />
+ 		<input type="number" name="age" id="ageId" class=""  value="" placeholder="Age..." min="5" step="1" max="20" />
+    </p>
+    <p>  <!--date k hỗ trợ safari -->
+ 		<label for="brithday">Ngày sinh  </label><br />
+ 		<input type="date" name="birthday" id="brithday" class=""  value=""  />
+    </p>
+     <p>
+ 		<label for="passId">Password  </label><br />
+ 		<input type="Password" name="pass" id="passId" class="" placeholder="Mật khẩu..."  value="" />
+     </p>
+      <p>
+ 		<label for="price">Khoảng giá  </label><br />
+ 		<input type="range" name="" id="price" class="" >
+    </p>
+    <p>
+ 		<label for="color">Chọn màu  </label><br />
+ 		<input type="color" name="" id="color" class=""  />
+    </p>
+    <p>
+ 		<label for="aboutId">Text Area  </label><br />
+ 		<textarea name="about" id="aboutId" cols="30" rows="10" placeholder="Giới thiểu bản thân..."> </textarea>
+     </p>
+   <p>
+ 		<label for="aboutId">Giới tính  </label><br />
+ 		<input type="radio" name="sex" id="maleId" value="Nam" checked="" >
+ 		<label for="maleId">Nam</label>
+ 		<input type="radio" name="sex" id="femaleId" value="Nữ"  >
+ 		<label for="femaleId">Nữ</label>
+
+     </p>
+
+     <p>
+ 		<label for="interestId">Sở thích </label><br />
+ 		<input type="checkbox" name="interestId" id="sothichId" value="Sở thích 1" checked="" >
+ 		<label for="sothichId">Sở thích 1</label>
+ 		<input type="checkbox" name="sex" id="femaleId" value="Sở thích 2"  >
+ 		<label for="femaleId">Sở thích 2</label>
+
+
+     </p>
+     <select>
+     	<option value="Hà Nội" >Hà Nội</option>
+     	<option value="Đà Nẵng" >Đà Nẵng </option>
+     </select>
+    <p>
+
+    	<input type="submit" name="" value="Đăng kí" />
+    	<input type="button" name="" value="Button" />
+    	<input type="reset" name="" value="Reset">
+         <br />
+        <button type="submit">Total</button>
+    </p>
+ </form>
+</body>
+</html>

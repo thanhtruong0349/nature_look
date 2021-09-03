@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ClearFix display</title>
+	<link rel="stylesheet" type="text/css" href="css/clearfix.css">
+</head>
+<!-- Dựng layout nhanh
+	
+	***Display n giá trị phức tạp
+	-Giá trị đơn:
+	   +none:
+	   +block:
+	   +inline-block: Các tp nằm trên 1 hàng giống như inline
+	                  Có thể set width height cho các tp như block
+	                  Nếu k set width thì tp sẽ tự động có width= nd tp inline
+	   +inline:
+
+	-Phức tạp sau nâng cao:
+	   +list-item: Có dấu . giống list ul
+	               Phụ thuộc vào list-style-type
+	   +flex:
+	   +grid:
+	   +table: rất phức tạp
+
+ -->
+ <header class="header">
+ 	HEADER
+ </header>
+<body>
+	<div class="row">
+		<div class="col">
+			COL 1
+		</div>
+
+		<div class="col">
+			COL 2
+		</div>
+		<div class="col">
+			COL 3
+			<div class="row">
+				<div class="col">
+					col3.1
+				</div>
+
+				<div class="col">
+					col3.2
+				</div>
+
+				<div class="col">
+					col3.3
+				</div>
+
+			</div>
+		</div>
+		
+	</div><!--End row-->
+ 	<div>Text</div>
+ 	<div class="row">
+ 		<div class="col">
+ 			Cột 1
+ 		</div>
+
+ 		<div class="col">
+ 			<p>Cột 2</p>
+ 			<div class="row">
+ 				<div class="col">
+ 					2.1
+ 				</div>
+ 				<div class="col">
+ 					2.2
+ 				</div>
+ 				<div class="col">
+ 					2.3
+ 				</div>
+ 			</div>
+ 		</div>
+
+
+
+ 	</div>
+<br/>
+
+<!-- Display Trong CSS
+      Thuộc tính visibility: ẨN vẫn còn không gian như opacity
+      BUT display ẩn cả không gian thành phần
+
+ -->
+
+
+<span class="block">Text here</span>
+<div class="block">Text here</div>
+<br/>
+
+<!-- Position trong HTML
+ 	-Dùng thể thay đổi vị trí các tp 1 cách "linh hoạt" > margin
+ 	-Khác nhau về sự thay đổi 
+
+	*Được dùng để căn left và top
+	*Position relative: Giữ nguyên vị trí bố cục ban đầu
+	*margin: các tp liền kề của nó sẽ bị thay đổ 
+
+ 	-Cú pháp: position: value
+ 	-value nhận:
+ 	 	+static: mặc định k có positon 
+ 	 	+absolute: giá trị tuyệt đối- change vị trí k giữ bố cục ban đầu
+ 	 		*Change flexible các tp theo body
+ 	 		*sẽ nhận thẻ body là mẹ
+ 	 		*Nếu left right cùng tồn tại: ưu tiên left
+ 	 		*Top và bottom => ưu tiên top
+ 	 	+relative: ( use cho left và top)tương đối- giữ nguyên bố cục 
+ 	 	+fixed: cố định tp khi scroll
+**Thuộc tính liên quan:
+   -left, right, top, bottom, z-index: thứ tự sắp xếp theo trục z
+	
+***Các tp có position sẽ ưu tiên nằm trên 
+***Nếu đều có thì sẽ ưu tiên tp có z-index cao hơn
+***z-index chỉ tồn tại khi có <=> position
+***Các giá trị thuộc tính đều chấp nhận ÂM (-10px)
+
+=> Nếu muốn position nhận thẻ bất kì là mẹ thì 
+  	*Set thẻ đó giá trị position: relative
+
+ -->
+ 
+ 	<div class="block-1">
+ 		Block 1
+ 	</div>
+ 	<div class="block-2">
+ 		Block 2
+ 	</div>
+
+ 	<div class="clear"></div>
+ 	
+ 	<div class="block-3">
+ 		Block 3
+ 	</div>
+
+     <div class="wrapper">
+     	<div class="block-4">
+ 		Block 4
+ 	</div>
+     </div>
+    
+    <div class="product-item">
+    	<h3>Tên sản phẩm</h3>
+    	<p>Giá: 500.000</p>
+    	<div class="overlay"></div>
+    </div> 
+
+    <div class="back-to-top">
+    	<a href="#">Back to top</a>
+    </div>
+</body>
+</html>

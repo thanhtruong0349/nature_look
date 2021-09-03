@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document: Shadow && Trasition</title>
+	<link rel="stylesheet"href="css/animate.min.css"
+  />
+	<link rel="stylesheet" type="text/css" href="css/shadow.css">
+</head>
+<!-- Cú pháp: box-shadow:h-offset  v-offset  blur  speard -->
+<!--   +h-offset: đổ bóng theo chiều ngang(bb)
+	   +v-offset: chiều dọc(bb)
+	   + blue: độ nhòe
+	   +speard: kích thước
+	   +color: màu( rgba độ trong suốt)
+
+	   =>Note: 
+	   		-Tham số blur & spread có thể k có khi +color
+	   		      box-shadow: 5px 5px #999
+	   		- Khi sd tham số spread bắt buộc phải có blur(nếu k sdd blur 9e62n 0)
+	   		-Nếu h và v =0 mà vẫn muốn hiển thị shadow=> phải có ggia1 trụ spread
+	   		(đổ bóng 4 góc)
+	   		- h và v CAN BE MINUS (ÂM)
+**text-shadow:h-shadow v-shadow  blur color
+
+***TRANSITION: hỗ trợ delay hiệu ứng
+		-Cú pháp: transition: value
+			-transition-property: (none, width, height, all): XĐ kiểu chuyển động
+			-transition-duration: 0.5s  :Time hoàn thành chuyển động s,ms
+			-transition-timing-function: value   = hiệu ứng chuyển động
+				+ease: chậm nhanh chậm
+				+ease-in: nhanh dần đều
+				+ease-out: nhanh đầu chậm ra
+				+ease-in-out:chậm nhanh chậm => giống ease
+				+linear: Chuyển động đều
+				+cubic-bezier(0.1 ,0.4, 0.8, 0.1) số càng lớn càng chậm
+			-transition-delay: value   => ít dùng- có khoảng time chờ trc khi chạy
+					value: time + đơn vị s,ms
+
+	-transtion: property duration timing-function
+		transition: all 2s linear;
+	******Thư viện css
+	animate.style all xuất hiện cùng 1 lúc
+	wow.js  (ket hợp vs animate) nhìn thấy mới có hiệu ứng
+	
+
+	Thành phần giả( Pseudo Elements)
+		-before, after: phải có content:''
+		-first-letter, first-line
+		-selection: chỉ tác động vào đoạn văn bản, change backgroud, color
+		=> bắt sk khi bôi đen ( quét khối)
+
+
+	Lớp giả: chỉ sd 1 dấu :
+ -->
+
+<body>
+	<div class="block">
+		block
+	</div>
+	<div class="text">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+
+	<div class="demo-transition animate__animated animate__backInDown">
+		Demo-transition
+	</div>
+	<div class="demo-transition-2 animate__animated animate__backInRight">
+		<p>Item 1</p>
+		<p>Item 1</p>
+		<p>Item 1</p>
+	</div>
+	<br>
+	<div class="example animate__animated animate__backInUp">
+		<button class="button" type="button"><span>Đăng kí ngay</span></button>
+	</div>
+
+	<div class="example-2 animate__animated animate__backInUp">
+		<button class="button" type="button"><span>Đăng kí ngay</span></button>
+	</div>
+
+	<br>
+
+	<div class="container">
+		<div class="form-wrapper">
+			<form>
+				<div>
+					<label>Họ và tên</label>
+					<input type="text" name="" placeholder="Họ và tên...">
+				</div>
+				<div>
+					<label>Nhận xét</label>
+					<textarea placeholder="Nội dung...">Nội  dung</textarea>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!--  -->
+	<div class="cover">
+		<p class="link">
+			<a href="#">Xem chi tiết</a>
+		</p>
+		<div>
+			<input type="checkbox" name="" class="sothich1">
+			<label>Sở thích</label>
+
+			<input type="checkbox" name="" class="sothich2">
+			<label>Sở thích</label>
+		</div>
+		
+	</div>
+</body>
+</html>

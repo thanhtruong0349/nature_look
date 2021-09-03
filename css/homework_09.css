@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.col {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ ::placeholder {
+    color: #999999;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+/* end static style */
+
+.page-header {
+    padding-top: 10px;
+    background: #5C5C5E;
+    position: relative;
+}
+
+.page-header .page-header__header-top {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.page-header .page-header__header-top::before {
+    content: '';
+    background-color: #f9d838;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    margin-right: 15px;
+    transform: skew(-30deg);
+    display: block;
+}
+
+.page-header .page-header__header-top .page-header__header-top--left {
+    width: 17%;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center {
+    width: 58%;
+    height: 51.36px;
+    transition: all 0.5s linear;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center>input {
+    display: none;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center label {
+    display: block;
+    float: right;
+    width: 29%;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center .header-top__center--input-search {
+    float: right;
+    position: absolute;
+    top: 0;
+    width: 71%;
+    bottom: 0;
+    right: 100%;
+    transition: all 0.4s linear;
+    overflow: hidden;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center .header-top__center--input-search input,
+.page-header .page-header__header-top .page-header__header-top--center .header-top__center--input-search button {
+    line-height: 30px;
+    border: 1px solid #f9d838;
+    background: inherit;
+    margin-top: 6px;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center .header-top__center--input-search>input {
+    padding-left: 10px;
+    color: white;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center .header-top__center--input-search button {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #f9d838;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center>input:checked~.header-top__center--input-search {
+    right: 29%;
+}
+
+.page-header .page-header__header-top .page-header__header-top--center .header-top__center--input-search input {
+    width: calc(100% - 36px);
+}
+
+.page-header .page-header__header-top .page-header__header-top--right {
+    width: 25%;
+}
+
+.page-header .page-header__header-top .page-header__header-top--right span {
+    color: #F9D838;
+    font-weight: bold;
+}
+/* end style .page-header__header-top */
+
+.page-header .page-header__header-bottom {
+    width: 100%;
+    height: 671px;
+    background: url(../image/du-an-muong-thanh-vien-trieu-oceanus-nha-trang.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header .page-header__header-bottom .page-header__header-bottom--menu-primary::after {
+    content: '';
+    display: block;
+    background: #F9D838;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    transform: skew(-30deg);
+}
+
+.page-header .page-header__header-bottom ul {
+    list-style: none;
+    position: relative;
+    text-align: right;
+}
+
+.page-header .page-header__header-bottom>ul>li {
+    display: inline-block;
+    background: #F9D838;
+    transform: skew(-30deg);
+    margin-right: -5px;
+    padding-right: 10px;
+}
+
+.page-header .page-header__header-bottom>ul>li a {
+    color: black;
+    display: block;
+    font-size: 14px;
+    transform: skew(30deg);
+    padding: 0 15px;
+    line-height: 40px;
+}
+
+.page-header .page-header__header-bottom>ul>li:hover {
+    background: white;
+    color: black;
+}
+/* end .page-header .page-header__header-bottom */

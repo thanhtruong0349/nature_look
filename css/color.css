@@ -1,0 +1,48 @@
+/*Học thuộc tính color
+Cú pháp: ;
+color:  color_value;
+Trong đó:  color_value nhận các giá trị;
++Tên màu (Tiếng Anh):  chỉ sử dụng đc vs các màu phổ biến
++Mã màu (Hexa): Bắt đầu = dấu # , thường có 6 kí tự sau #
+=> #019658
+Lưu ý:  Nếu mã màu hexa có 6 kí tự giống hệt nhau, thay thế = 3 kí tự;
+=> #000: (màu đen) #fff (màu trắng), #ddd: (màu ghi);, 
++Màu RGB: green red blue;
+       rgb(180,40,24)
++Màu rgba:  Màu RGB có opacity;
+          rgb(124,123,97,0.7)
+
+
+******Thuộc tính font-size
+- Cú pháp: ;
+  font-size:  value;
+  Trong đó value nhận các giá trị 
+        +tuyệt đối (px, pt):    pt= 1.3*px
+        +tương đối (%, em, rem,...)
+   Các đơn vị sẽ học : vh, vw,...
+   */
+/*body{
+	color: blue;
+}*/
+.content{
+	color: red;
+	font-size: 20pt;  /*( pt=1.3*px )*/
+	/* (% && em )là tỉ lệ tương đối so vs thành phần cha
+        rem : chịu tác động của mặc định trình duyệt ( select thẻ html)
+        thường dùng em && rem : lập trình mobile 
+	 */
+}
+.content .item{
+	color: blue;
+}
+.content .main {
+	color: green;
+}
+.content .main{
+	color: inherit; /* Kế thừa màu từ cha */
+	/* color: initial : tính giá trị mặc định từ web */
+	/* unset : loại bỏ giá trị thuộc tính đã set */
+}
+.content .item{
+	color: unset; /* Trả về màu của cha or web ban đầu */
+}

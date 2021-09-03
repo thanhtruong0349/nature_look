@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner-search {
+	 width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+.banner-search .search-filter {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.banner-search .search-filter .tab-content {
+    background: #00000094;
+    color: #fff;
+    padding: 15px;
+}
+
+.banner-search .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.banner-search .row.no-padding {
+    margin: 0;
+}
+
+.banner-search .row::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.banner-search .col {
+    float: left;
+    position: relative;
+    padding: 0px 10px;
+    min-height: 1px;
+}
+
+.banner-search .row.no-padding .col {
+    padding: 0;
+}
+
+.banner-search .category {
+    width: 20%;
+    border-right: 1px solid #ddd;
+    background: #fff;
+}
+
+.banner-search .category select {
+    width: 95%;
+}
+
+.banner-search .search-input {
+    width: 65%;
+}
+
+.banner-search .search-button {
+    width: 15%;
+}
+
+.banner-search .form-item,
+.banner-search button {
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    height: 38px;
+}
+
+.banner-search .search-input input {
+    padding-left: 35px;
+    padding-right: 15px;
+}
+
+.banner-search .search-input {
+    position: relative;
+}
+
+.banner-search .search-input::before {
+    content: '\f002';
+    position: absolute;
+    color: #333;
+    line-height: 39px;
+    left: 15px;
+    font-family: 'FontAwesome';
+}
+
+.banner-search .search-button button {
+    background: #B77830;
+    height: 38px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.banner-search .select-item {
+    width: 20%;
+}
+
+.banner-search .filter-second {
+    margin-top: 15px;
+}
+
+.banner-search .filter-second select {
+    background: transparent;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+/*Menu*/
+
+.col .sell{
+	border: 3px solid #ddd;
+}
+.col .rent{
+	border: 3px solid #ddd;
+}
+.banner-search .search-filter .tab-nav p.active a, 
+.banner-search .search-filter .tab-nav a:hover{
+	background:#00000094 ;
+	color: #fff;
+
+}

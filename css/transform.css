@@ -1,0 +1,27 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.block{
+	width: 200px;
+	height: 200px;
+	background: green;
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+	padding: 50px;
+	margin: 30px auto;
+	transition: all 0.4s linear;
+	
+}
+.block:hover{
+	/*transform: skew(10deg, 40deg);*/
+	transform: skewY(40deg);
+}

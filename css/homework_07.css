@@ -1,0 +1,148 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+a{
+	text-decoration: none;
+}
+@font-face{
+	font-family: "Roboto";
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+img{
+	width: 100%;
+	height: auto;
+}
+body{
+    font-family: "Roboto", sans-serif; 
+    font-size: 19px;
+}
+.menu-primary{
+	background: green;
+	margin-top: 10px;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.menu-primary ul{
+	list-style: none;
+
+}
+.menu-primary ul.menu>li{ /*hiện cùng cấp cấp 1*/
+	display: inline-block;
+	margin-right: -4px;/* sát giữa các menu vào nhau */
+	position: relative;
+}
+.menu-primary ul li a{
+	color: #fff;
+	display: block;
+}
+.menu-primary ul.menu ul{ /*Ẩn ul con*/
+	position: absolute;
+	background: green;
+	min-width: 200px; /*k set max-width*/
+	top: 100%;
+	left: 0;
+	z-index: 100;
+	display: none; /*ẩn menu con*/
+}
+
+.menu-primary ul.menu ul li a{
+	display: block;
+	border-bottom: 1px solid blue;
+	padding: 7px 20px;
+}
+.menu-primary ul.menu ul li a:hover{
+	background-color:green;
+}
+/*xli khi hover vào menu cấp 1 sẽ xổ menu cấp 2 tương ứng*/
+.menu-primary ul.menu>li:hover ul{
+	display: block;
+}
+
+.menu-primary ul.menu>li>a{ /*tác động thẻ a của cấp đầu tiên cấp 1*/
+	display: block;
+	padding: 10px 15px;
+	
+}
+.menu-primary ul.menu>li+li>a{ /*+: bỏ qua li đầu tiên td vào li thứ 2*/
+	border-left: 1px solid #fff;
+}
+/*xử lí khi hover vào thẻ a của menu cấp 1*/
+.menu-primary ul.menu>li>a:hover,
+.menu-primary ul.menu>li:hover a{
+	background: #333;
+	color: yellow;
+}
+/*block left*/
+.slider-left{
+	width: 60%;
+	float: left;
+	position: relative;
+	margin-top: 10px;
+}
+.slider img{
+	max-width: 100%;
+}
+.menu-child{
+	margin-top: 0;
+}
+.menu-child ul{
+	list-style: none;
+
+}
+.menu-child ul.child>li{ /*hiện cùng cấp cấp 1*/
+	display: inline-block;
+	margin-right: -4px;/* sát giữa các menu vào nhau */
+	position: relative;
+}
+.menu-child ul li a{
+	position: relative;
+	color: #333;
+	display: block;
+	padding: 5px 30px;
+	font-size: 16px;
+	border-left: 1px solid #333;
+	padding-bottom: 30px;
+}
+/*block -right*/
+.block-right{
+	width: 35%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.news a{
+	color: #fff;
+	width: 30px;
+	background: green;
+	margin-top: -10px;
+
+}
+.news{
+	border-bottom: 3px solid burlywood;
+}
+.post-one::after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.post-one img{
+	max-width: 30%;
+	float: left;
+}
+.post-one .content{
+	width: 70%;
+	float: left;
+	margin-top: 10px;
+}
+.post-one .time{
+	float: left;
+	font-size: 15px;
+	opacity: 0.5;
+	border-bottom: 3px dashed #ddd;
+	margin-bottom: 20px;
+}

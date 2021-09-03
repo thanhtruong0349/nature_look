@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Grid System</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.container{
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		.row{
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+		.row::after{
+			content: '';
+			clear: both;
+			display: block;
+		}
+		.col{
+			float: left;
+			min-height: 1px;
+			padding: 0 10px;
+			width: calc(100%/3);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- destop  col-lg-* >=1021px
+						993px<col-md-* <=1200px
+						769px<col-sm-*<992px
+						col-xs-*<=768px
+			-->
+			<div class="col-lg">
+				Col 1
+			</div>
+			<div class="col">
+				Col 2
+			</div>
+			<div class="col">
+				Col 3
+			</div>
+		</div>
+	</div>
+</body>
+</html>

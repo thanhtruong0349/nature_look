@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.row{
+	border: 1px solid red;
+	
+}
+.row::after{
+	content: '';/*Rỗng để tồn tại 1 after*/
+	display: block; /*Chuyển dạng thẻ HTML thành block*/
+	clear: both;
+}
+.col{
+	width: 30%;
+	float:  left;
+}
+.clear{
+	clear: both;
+}
+
+/*Display trong CSS*/
+.block{
+	display: block;
+	margin-left: 30%;
+	list-style-type: decimal;
+    /*border: 1px solid red;
+    height: 200px;
+    width: 500px;*/
+
+  /* opacity: 0;      /*Còn kgian*/
+  /* visibility: hidden; */ /*Not kgian*/*/
+}
+
+
+
+/*Position trong CSS*/
+.block-1{
+	background: green;
+	color: #fff;
+	font-size: 1.5em;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	z-index: 1;
+}
+.block-2{
+	background: red;
+	color: #fff;
+	font-size: 1.5em;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: -10px;
+	top: -40px;
+	float: left;
+	z-index: 2; /*Số lớn hơn nằm trên*/
+}
+.block-3{
+	background: blue;
+	color: #fff;
+	font-size: 1.5em;
+	width: 200px;
+	height: 200px;
+	float: left;
+
+}
+.clear{
+	clear: both;
+
+}
+.wrapper{
+	border: 1px solid red;
+	width: 400px;
+	height: 400px;
+	margin-top: 30px;
+	margin-left: 50%;
+	position: relative; /*Change mother body=> wrapper*/
+}
+.block-4{
+	background: palegoldenrod;
+	color: #fff;
+	font-size: 1.5em;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+
+}
+/*******Absolute ******/
+
+.product-item{
+	border: 1px solid red;
+	width: 200px;
+	height: 200px;
+	margin: 30px auto;
+    position: relative;
+}
+.product-item .overlay{
+	position: absolute;
+	left: 0;  /*If not have this k hiễn thị or chỉ có overlay*/
+	top: 0;   /*width: 100% and height 100%*/
+	right: 0;
+	bottom: 0;
+	background: #7fff0069;
+	display: none;
+}
+.product-item:hover .overlay{
+	display: block;
+}
+.back-to-top{
+	position: fixed;
+	bottom: 5px;
+	right: 5px;     /*Trang di chuyển lên đầu*/
+}
+.back-to-top a{
+	background: red;
+	color-rendering: #fff;
+	padding: 5px 10px;
+	z-index: 99;
+}
+header{
+	background: greenyellow;
+	color: #333;
+	font-size: 1.5em;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	padding: 20px 0px;
+	z-index: 99;
+}
+body{
+	padding-top: 68px; 
+}
+

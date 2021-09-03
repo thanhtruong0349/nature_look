@@ -1,0 +1,30 @@
+.header .header__logo {
+  padding: 30px 15px;
+  font-family: "Roboto" ,sans-serif; }
+  .header .header__logo img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%); }
+
+.header .header__hotline {
+  border-radius: 20px; }
+
+.header .header__hotline--text {
+  border: 1px solid green; }
+
+.slideshow {
+  position: relative; }
+  .slideshow img {
+    max-width: 100%;
+    height: auto; }
+  .slideshow .slideshow__controls {
+    position: absolute;
+    top: 40%;
+    height: auto; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ff0000; }
+
+.container {
+  max-width: 1015px; }

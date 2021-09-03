@@ -1,0 +1,25 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+.wrapper{
+	width: 600px;
+	margin: 0 auto;
+	background: burlywood;
+}
+.wrapper ul{
+	border: 1px solid red;
+	list-style-position: inside;
+	list-style: none;
+
+	/*list-style-type: none;*/
+	/*margin-left: 10px;*/
+	/*list-style: inside;*/
+}
+.wrapper ul li{
+	/*background: url('image/');*/
+	display: inline-block;
+	
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Margin trong CSS</title>
+	<link rel="stylesheet" type="text/css" href="css/margin.css">
+</head>
+<!-- Margin tác động vào căn lề bên ngoài thành phần
+   1. Margin: theo chiều rộng: WIDTH (NOT Height)
+      -Cú pháp: margin: value+unit
+      value: nguyên, thực
+      unit: same font-size
+
+      ++Note: Muốn căn giữa 1 khối:
+        -set chiều rộng cho khối <100% < kt trình duyệt
+        -set thuộc tính margin như sau:
+            + margin-left: auto
+            + margin-right: auto
+
+      ***Note: NOT căn giữa theo chiều rộng màn hình = margin auto   
+
+      ***Margin căn bên ngoài, padding bên trong
+    ==> margin và padding đều chấp nhận giá trị âm
+ -->
+<body>
+	<div class="block-1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+
+	<div class="wrapper"> 
+ 		<div class="block-2">
+ 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ 		</div>
+	</div>
+    
+    <div class="banner">
+    	<h2>Tin tức du lịch</h2>
+
+    </div>
+    <br>
+    <div class="col-1">Block 1</div>
+    <div class="col-2">Block 2</div>
+
+</body>
+</html>

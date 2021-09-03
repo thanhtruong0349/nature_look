@@ -1,0 +1,99 @@
+/*Dinh nghia keyframe*/
+@keyframes ownerAnimation{
+	from{
+		background: red;
+	}
+	to{
+		background: green;
+	}
+}
+@keyframes changeBackground{
+	0%{
+		background: red;
+	}
+	25%{
+		background: green;
+	}
+	20%{
+		background: yellow;
+	}
+	70%{
+		background: purple;
+	}
+	100%{
+		background: blue;
+	}
+}
+.block{
+	width: 300px;
+	height: 300px;
+	background: burlywood;
+	color: #fff;
+	margin: 0 auto;
+	/*animation-name:ownerAnimation;
+	animation-duration: 2s;*/
+	/*animation-delay: 1s;
+	animation-iteration-count: 5;*/
+	/*animation-direction: reverse;*/
+	animation:changeBackground 2s linear 0s infinite normal both ;
+}
+@keyframes Phonering{
+	0%{
+		transform: rotate(-30deg) scale(0.8);
+	}
+	10%{
+		transform: rotate(10deg) scale(1.2);
+	}
+	80%{
+		transform: rotate(-30deg) scale(0.8);
+	}
+	90%{
+		transform: rotate(0deg) scale(1);
+	}
+	100%{
+		transform: rotate(30deg) scale(1.2);
+	}
+}
+.phonering{
+	position: fixed;
+	top: 20%;
+	left: 5%;
+}
+.phonering .phone{
+	background: red;
+	padding: 15px 20px;
+	border-radius: 50%;
+	font-size: 25px;
+}
+.phonering .phone a{
+	color: #fff;
+
+}
+.phonering .phone i{
+	animation: Phonering 1s linear 0s infinite normal both;
+}
+@keyframes FadeOutDown{
+	0%{
+		opacity: 1;
+	}
+	10%{
+		transform: translateY(10px);
+		opacity: 0.9;
+	}
+	20%{
+		transform: translateY(20px);
+		opacity: 0.8;
+	}
+	50%{
+		transform: translateY(30px);
+		opacity: 0.5;
+	}
+	100%{
+		transform: translateY(45px);
+		opacity: 0;
+	}
+}
+.fade-out-down{
+	text-align: center;
+	animation:FadeOutDown 1s linear 0s infinite normal both ;
+}

@@ -1,0 +1,7 @@
+.block-1{
+	box-sizing: border-box; /*khôi phục giá trị width đã set*/ 
+	width: 500px;
+	border: 1px solid red;
+	padding: 20px 30px;
+
+}

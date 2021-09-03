@@ -1,0 +1,56 @@
+body{
+	background: url('../image/background02.jpg') no-repeat fixed ; 
+    background-size: 100% 100%;
+   
+}
+/*Từ ngoài vào trong*/
+.item{
+	border-bottom: 2px solid red;
+}
+.item span{
+	border: 2px dashed green;
+	border-bottom: 2px solid green;
+	color: green;
+}
+/*Register--begin*/
+.register{
+background: #15b1ea8f;
+}
+.register .form-group label{
+	font-weight: bold;
+	font-style: italic;
+
+}
+.register .form-group input{
+	width: 90%;
+	height:20px ;
+	background: #65ce92ad;
+	border: 1px solid red;
+	color: #fff;
+}
+.register .form-group{
+   border-bottom: 2px dotted green;
+}
+.register .button-wrapper{
+	border-top: 1px solid green;
+}
+.register .button-wrapper button{
+	background: #008067 ;
+	color: #fff;
+	font-size: 1.1em;
+	border: none;
+	width: 200px;
+	height: 30;
+}
+
+/*Register--end*/
+
+/*Dãn dòng trong table*/
+.table{
+	line-height: 2;
+}
+/*Set màu cho nút*/
+.button{
+	background-color: green;
+	color: #ffff;
+}

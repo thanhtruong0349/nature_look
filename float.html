@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Float và Clear trong CSS</title>
+	<link rel="stylesheet" type="text/css" href="css/float.css">
+
+</head>
+<!-- Thuộc tính float : giúp trôi thành phần về bên trái or phải tp cha của nó.
+	 -Cú pháp: float: value
+	 -value: 
+	    + none: k trôi về bên nào
+	    + left: trôi về trái
+	    + right: trôi về phải
+  
+	Thuộc tính float:
+	  -Nếu các thẻ phía trc đang sử dụng float =>Các thành phần phía sau nó sẻ tự động trôi len và lấp chỗ trống
+	  -Muốn khắc chế tình trạng này=> 
+	     + Nhóm all các thẻ sd float vào 1 thẻ block khác(div, sectioin,...) và set up overflow cho thẻ đó
+	     +Dùng thuộc tính clear
+
+	  **Mối qh giữa thứ tự trong HTML và việc s float
+	     + Nếu thẻ HTML đứng trc sẽ trôi trc 
+
+  2. Thuộc tính clear: Dùng khắc chế tự động trôi khi các thẻ trc sd
+        -Cú pháp: clear: value
+        -value nhận : none, left(khắc chế trôi về trái khi sd float:left)
+           +right: khắc chế trôi về phải( float: right)
+           +both: khắc chế 2 TH (float left và float right)
+  3. Kỹ thuật clearfix
+        -NOT thuộc tính của CSS
+        -USE các thuộc tính CSS để tạo layout
+-->
+<body>
+	<div class="wrapper">
+		<div class="col-1">Block 1</div>
+    	<div class="col-2">Block 2</div>
+    	<div class="col-3">Block 3</div>
+    	
+    	<div class="clear"></div>
+    	<!-- Ngăn k cho các thành phần dưới trôi lên bởi float -->
+    	<div class="element">Text</div>
+    	<div class="element-2">Text 2</div>
+    	<p>Text 3</p>
+
+	</div>
+	
+</body>
+</html>

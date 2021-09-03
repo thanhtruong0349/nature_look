@@ -1,0 +1,14 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+.block{
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	border: 1px solid red;
+	/*background-image: linear-gradient(to top,#EEEBE4,#F68F59,#37BCE5);*/
+	
+}

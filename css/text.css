@@ -1,0 +1,35 @@
+/*Nhúng font vào web*/
+@font-face{
+	font-family: "Open Sans Regular";
+	src: url('../fonts/Roboto-Thin.ttf');
+}
+
+body{
+	/*font-family: "Open Sans Regular", sans-serif;*/
+	/*Font mặc định: 
+	      + Không chân:  sans-serif;
+	      + Có chân:  serif;
+	      
+	 */
+	 /* font-family: 'Hahmlet', serif;*/ 
+	 /*Rất dễ k thể load font vì server đứt cap*/
+	/* line-height: 1.2;*/   /* 120 %*/
+}
+/*Ghi đè*/
+.text{
+	font-style: italic;
+}
+.text{
+	font-family: 'Hahmlet';
+	font-style: normal;
+	font-weight: 600;
+	/*line-height: 1.5;*/
+	text-decoration: underline overline line-through none;
+	/*letter-spacing: 1px;*/
+	word-spacing: 5px;
+	text-indent: 10rem;
+	text-transform: capitalize;
+}
+.transform::first-letter{
+	text-transform: uppercase;
+}
